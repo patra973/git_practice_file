@@ -1,23 +1,24 @@
 function prime(number){
 
-   let count=0;
+   let factor=0;
 
    for(i=1;i<=number;i++){
 
       if(number % i == 0){
 
-         count++;
+         factor++;
       }
-      if(count == 2){
+}
+      if(factor == 2){
          return true
      } 
        return false
     }
 }
-let number=5
+let ans=prime(5);
 
-if(prime(number)==true){
-     console.log(number,"is a prime number")
+if(ans==true){
+     console.log(number,"prime number")
 }else{
      console.log(number,"is a not prime number")
 }
