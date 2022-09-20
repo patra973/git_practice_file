@@ -4,7 +4,7 @@ function prime(number){
 
    for(i=1;i<=number;i++){
 
-      if(number % i ==0){
+      if(number % i == 0){
 
          count++;
       }
@@ -14,11 +14,10 @@ function prime(number){
        return false
     }
 }
-let ans=prime(13)
+let number=5
 
-if(ans==true){
+if(prime(number)==true){
      console.log(number,"is a prime number")
 }else{
      console.log(number,"is a not prime number")
-
-   
+}
